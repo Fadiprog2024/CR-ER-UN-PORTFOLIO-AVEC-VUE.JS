@@ -13,7 +13,6 @@ if (redirect !== null) {
   const path = redirect.split('?')[0]
 const destination = base + path.replace(/^\/+/, '')
 
-  window.history.replaceState(null, '', destination)
+ window.history.replaceState(null, '', destination)
 }
-
 createApp(App).use(router).mount('#app')
