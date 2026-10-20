@@ -1,10 +1,8 @@
-
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/main.css'
 
-// Récupérer l'adresse initiale après la redirection GitHub Pages
 const params = new URLSearchParams(window.location.search)
 const redirect = params.get('redirect')
 
@@ -14,6 +12,6 @@ if (redirect !== null) {
   const destination = base + path.replace(/^\/+/, '')
 
   window.history.replaceState(null, '', destination)
-  router.replace('/' + path.replace(/^\/+/, ''))
 }
+
 createApp(App).use(router).mount('#app')
