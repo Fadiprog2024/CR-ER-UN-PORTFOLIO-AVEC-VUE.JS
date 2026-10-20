@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page introuvable</title>
+    <script>
+      const base = '/CREER-UN-PORTFOLIO-AVEC-VUE.JS/'
+      const path = window.location.pathname
+
+      if (path.startsWith(base)) {
+        const target = base + '?redirect=' +
+          encodeURIComponent(path.slice(base.length) + window.location.search + window.location.hash)
+        window.location.replace(target)
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
