@@ -11,8 +11,9 @@ const redirect = params.get('redirect')
 if (redirect !== null) {
   const base = import.meta.env.BASE_URL
   const path = redirect.split('?')[0]
-const destination = base + path.replace(/^\/+/, '')
+  const destination = base + path.replace(/^\/+/, '')
 
- window.history.replaceState(null, '', destination)
+  window.history.replaceState(null, '', destination)
+  router.replace('/' + path.replace(/^\/+/, ''))
 }
 createApp(App).use(router).mount('#app')
