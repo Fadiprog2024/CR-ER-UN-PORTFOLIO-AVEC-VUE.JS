@@ -85,7 +85,15 @@ Les contrôles ont été effectués sur le portfolio publié sur GitHub Pages.
 - [Validation HTML W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffadiprog2024.github.io%2FCREER-UN-PORTFOLIO-AVEC-VUE.JS%2F)
 - [Validation CSS W3C](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffadiprog2024.github.io%2FCREER-UN-PORTFOLIO-AVEC-VUE.JS%2F)
 
-*La validation HTML concerne le document analysé par le validateur ; les avertissements CSS ne sont pas bloquants.*
+### Captures d'écran des validations W3C
+
+**Validation HTML5 — 0 erreur, 0 avertissement**
+
+![Résultat de la validation HTML W3C](W3C/validation-html-w3c.png)
+
+**Validation CSS3 — 0 erreur, 3 avertissements non bloquants**
+
+![Résultat de la validation CSS W3C](W3C/validation-css-w3c.png)
 
 ## Déploiement
 
