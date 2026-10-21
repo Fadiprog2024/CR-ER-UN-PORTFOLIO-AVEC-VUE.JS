@@ -18,5 +18,15 @@ if (redirect !== null) {
   )
 }
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+app.use(router)
+
+if (redirect !== null) {
+  const path = redirect.startsWith('/') ? redirect : '/' + redirect
+  router.replace(path)
+}
+
+router.isReady().then(() => {
+  app.mount('#app')
+})
 
